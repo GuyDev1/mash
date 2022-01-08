@@ -9,7 +9,7 @@ import {
   RANDOM_NUMBER_GENERATION_INTERVAL,
   RANDOM_NUMBER_RESULT,
   TOTAL_NUMBER_OF_VALUES,
-  RESTART_GAME_BUTTON_TITLE
+  RESTART_GAME_BUTTON_TITLE,
 } from './gameConstants';
 import { GameContent } from './gameStyledComponents';
 import { RandomNumberGenerator } from './RandomNumberGenerator';
@@ -63,12 +63,12 @@ export default function Game() {
         setGameOver={setGameOver}
       />
 
-      {isGameOver && 
+      {isGameOver && (
         <ArrowButtonWithTooltip
           buttonTitle={RESTART_GAME_BUTTON_TITLE}
           onClick={onRestartGameClick}
         />
-      }
+      )}
     </GameContent>
   );
 }

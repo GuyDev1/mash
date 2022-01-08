@@ -2,7 +2,7 @@ export const SETUP_TITLE = "Let's get to know you better";
 export const NEXT_QUESTION_BUTTON_TITLE = 'Next Question';
 export const INPUT_EMPTY_ERROR = 'Please enter a value';
 export const LAST_QUESTION_BUTTON_TITLE = "Let's play already!";
-export const SETUP_INPUT_PLACEHOLDER = "Give me your best shot!"
+export const SETUP_INPUT_PLACEHOLDER = "Give me your best shot!";
 
 export const MARRY_QUESTIONS_INDEX = 0;
 export const NUMBER_OF_KIDS_QUESTION_INDEX = 1;
