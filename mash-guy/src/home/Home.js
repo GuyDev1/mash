@@ -1,20 +1,21 @@
 import React from 'react';
-import { Button, Icon } from 'semantic-ui-react';
-import { Title } from '../globalStyledComponents';
-import { HomeContent } from './homeStyledComponents';
-
-const MESH_GAME_TITLE = "Let's play M.A.S.H - Remote style";
+import { useNavigate } from 'react-router-dom';
+import { CenteredContent, Title } from '../globalStyledComponents';
+import { SETUP_PAGE } from '../App';
+import { HOME_BUTTON_TITLE, MESH_GAME_TITLE } from './homeConstants';
+import { ArrowButtonWithTooltip } from '../global/ArrowButtonWithTooltip';
 
 export default function Home() {
+  const navigate = useNavigate();
+
+  const onReadyClick = () => {
+    navigate(SETUP_PAGE);
+  };
+
   return (
-    <HomeContent>
+    <CenteredContent>
       <Title>{MESH_GAME_TITLE}</Title>
-      <Button size='big' animated >
-        <Button.Content visible>Next</Button.Content>
-        <Button.Content hidden>
-          <Icon name="arrow right" />
-        </Button.Content>
-      </Button>
-    </HomeContent>
+      <ArrowButtonWithTooltip buttonTitle={HOME_BUTTON_TITLE} onClick={onReadyClick} />
+    </CenteredContent>
   );
 }
