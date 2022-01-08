@@ -7,7 +7,19 @@ export const Page = Styled.div`
 	color: #FFFFFF;
 `;
 
+export const CenteredContent = Styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+`;
+
 export const Title = Styled.h1`
 	font-size: 2em;
+	text-align: center;
+`;
+
+export const SubTitle = Styled.h2`
+	font-size: 1.5em;
 	text-align: center;
 `;
