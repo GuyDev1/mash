@@ -1,12 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './home/Home';
-import { Page } from './globalStyledComponents';
+import { Page } from './global/globalStyledComponents';
 import Setup from './setup/Setup';
 import Game from './game/Game';
-
-export const SETUP_PAGE = '/setup';
-export const GAME_PAGE = '/game';
+import { GAME_PAGE, SETUP_PAGE } from './global/globalConstants';
 
 function App() {
   return (
