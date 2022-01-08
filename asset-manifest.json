@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mash/static/css/main.e6c13ad2.css",
+    "main.js": "/mash/static/js/main.72cecf37.js",
+    "index.html": "/mash/index.html",
+    "main.e6c13ad2.css.map": "/mash/static/css/main.e6c13ad2.css.map",
+    "main.72cecf37.js.map": "/mash/static/js/main.72cecf37.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.72cecf37.js"
+  ]
+}
