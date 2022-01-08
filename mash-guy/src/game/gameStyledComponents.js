@@ -20,13 +20,11 @@ export const GameRow = Styled.div`
 	width: 80%;
 	display: flex;
 	align-content: space-evenly;
-	// border: 1px solid #FFFFFF;
 	flex-direction: ${(props) => (props.reverse ? 'row-reverse' : 'row')};
 `;
 
 export const GameColumn = Styled.div`
 	flex: 1;
-	// border: 1px solid #FFFFFF;
 	text-align: center;
 	display: flex;
 	flex-direction: ${(props) => (props.reverse ? 'column-reverse' : 'column')};
@@ -34,17 +32,14 @@ export const GameColumn = Styled.div`
 
 export const NumberIterationContainer = Styled.div`
 	flex: 2;
-	// border: 1px solid #FFFFFF;
 	text-align: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	// font-size: 2em;
 `;
 
 export const AnswerValue = Styled.div`
 	flex: 1;
-	// border: 1px solid #FFFFFF;
 	text-align: center;
 	display: flex;
 	justify-content: center;
